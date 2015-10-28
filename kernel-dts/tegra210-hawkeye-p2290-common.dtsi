@@ -1312,4 +1312,9 @@
 		device-method = <0x1 0x00000002>;  /* type (0x1 = ioctl) */
 		status = "okay";
 	};
+
+	ehci@7d004000 {
+		avdd_usb-supply = <&vdd_3v3>;
+		vddio_hsic-supply = <&max77620_ldo0>;
+	};
 };
