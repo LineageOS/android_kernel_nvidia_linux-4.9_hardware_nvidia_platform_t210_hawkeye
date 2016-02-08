@@ -122,7 +122,7 @@
 	serial@70006200 {
 		compatible = "nvidia,tegra114-hsuart";
 		dma-names = "tx";
-		nvidia,adjust-baud-rates = <921600 (100)>;
+		nvidia,adjust-baud-rates = <921600 921600 100>;
 		status = "okay";
 	};
 
