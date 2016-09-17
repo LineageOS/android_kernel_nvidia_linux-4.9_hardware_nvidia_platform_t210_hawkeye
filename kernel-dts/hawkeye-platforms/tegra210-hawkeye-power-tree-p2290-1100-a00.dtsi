@@ -14,7 +14,7 @@
 
 #include "tegra210-hawkeye-pmic-p2290-1100-a00.dtsi"
 #include "tegra210-hawkeye-fixed-p2290-1100-a00.dtsi"
-#include "tegra210-ers-power-dvfs-e2174-1101-a00.dtsi"
+#include <t210-common-platforms/tegra210-ers-power-dvfs-e2174-1101-a00.dtsi>
 
 / {
 

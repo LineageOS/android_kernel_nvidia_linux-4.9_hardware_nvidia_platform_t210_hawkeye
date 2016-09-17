@@ -16,7 +16,7 @@
  */
 
 
-#include "tegra210-platforms/tegra210-modem-common.dtsi"
+#include <tegra210-soc/tegra210-modem-common.dtsi>
 
 / {
 	modem {

@@ -1,4 +1,4 @@
-#include "tegra210-comms.dtsi"
+#include <t210-common-platforms/tegra210-comms.dtsi>
 
 / {
 	bcm4329_wlan2_ {
