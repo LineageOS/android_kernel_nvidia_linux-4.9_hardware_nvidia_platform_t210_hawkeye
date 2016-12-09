@@ -153,4 +153,10 @@
 			};
 		};
 	};
+
+	gps_wake {
+		compatible = "gps-wake";
+		gps-enable-gpio = <&gpio TEGRA_GPIO(I, 3) 0>;
+		status = "okay";
+	};
 };
