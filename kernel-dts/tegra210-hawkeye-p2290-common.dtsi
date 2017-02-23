@@ -700,19 +700,12 @@
 
 	pmc@7000e400 {
 		nvidia,invert-interrupt;
+		nvidia,restrict-voltage-switch;
+		pinctrl-names = "default";
+		pinctrl-0 = <&pinctrl_iopad_default>;
+
 		platform-io-pad-voltage = <TEGRA_IO_PAD_GROUP_GPIO IO_PAD_VOLTAGE_1_8V>;
 		io-pad-defaults {
-			pex-bias {
-				nvidia,deep-power-down-enable;
-			};
-
-			pex-clk1 {
-				nvidia,deep-power-down-enable;
-			};
-
-			pex-clk2 {
-				nvidia,deep-power-down-enable;
-			};
 			audio-hv {
 				nvidia,io-pad-init-voltage = <IO_PAD_VOLTAGE_1_8V>;
 			};
@@ -727,15 +720,22 @@
 
 			sdmmc1 {
 				nvidia,io-pad-init-voltage = <IO_PAD_VOLTAGE_1_8V>;
-				nvidia,enable-dynamic-pad-voltage;
 			};
 
 			spi {
 				nvidia,io-pad-init-voltage = <IO_PAD_VOLTAGE_1_8V>;
 			};
+		};
 
-			sdmmc3 {
-				nvidia,enable-dynamic-pad-voltage;
+		pinctrl_iopad_default: iopad-defaults {
+			sdmmc-io-pads {
+				pins = "sdmmc1", "sdmmc3";
+				nvidia,enable-voltage-switching;
+			};
+
+			pex-io-pads {
+				pins = "pex-bias", "pex-clk1", "pex-clk2";
+				low-power-enable;
 			};
 		};
 	};
