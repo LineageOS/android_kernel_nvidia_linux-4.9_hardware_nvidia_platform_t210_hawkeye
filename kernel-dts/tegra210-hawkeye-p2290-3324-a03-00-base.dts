@@ -31,12 +31,4 @@
 	sound {
 		nvidia,digital-mic-data-input = "pdm0_di";
 	};
-
-	udc@7d000000 {
-		status = "okay";
-	};
-
-	otg@7d000000 {
-		status = "okay";
-	};
 };

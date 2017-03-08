@@ -63,26 +63,6 @@
 			};
 		};
 
-		fragement@4 {
-			odm-data = "enable-tegra-udc";
-			override@0 {
-				target = <&udc>;
-				_overlay_ {
-					status = "okay";
-				};
-			};
-		};
-
-		fragement@5 {
-			odm-data = "enable-tegra-otg";
-			override@0 {
-				target = <&otg>;
-				_overlay_ {
-					status = "okay";
-				};
-			};
-		};
-
 		fragement@6 {
 			odm-data = "soft-watchdog-timer";
 			override@0 {
