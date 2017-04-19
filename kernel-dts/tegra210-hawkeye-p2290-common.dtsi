@@ -109,7 +109,6 @@
 
 	pinmux@700008d4 {
 		prod-settings {
-			mask-one-style;
 			prod-qspi {
 				nvidia,prod-boot-init;
 				prod = <0 0x29C 0x00000002 0x00000000>; // QSPI-COMP-CONTROL E_INPU 0
@@ -1208,7 +1207,6 @@
 
 	pinmux@700008d4 {
 		prod-settings {
-			mask-one-style;
 			i2c0_prod {
 				nvidia,prod-boot-init;
 				prod = <0 0xD4 0x01F1F000 0x00006000
